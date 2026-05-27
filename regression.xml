@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="The Horuku regression">
+    <listeners>
+        <listener class-name="com.tanmay.listeners.RetryListener"/>
+        <listener class-name="com.tanmay.listeners.ScreenshotListener"/>
+    </listeners>
+
+    <test name="Regression ">
+        <classes>
+            <class name="com.tanmay.tests.TestAddRemoveElements"/>
+            <class name="com.tanmay.tests.TestCheckBoxes"/>
+            <class name="com.tanmay.tests.TestDropdown"/>
+            <class name="com.tanmay.tests.TestDynamicControl"/>
+            <class name="com.tanmay.tests.TestLogin"/>
+        </classes>
+    </test>
+</suite>
