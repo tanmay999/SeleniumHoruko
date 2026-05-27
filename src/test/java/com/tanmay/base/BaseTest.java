@@ -11,7 +11,7 @@ import java.util.logging.Logger;
 public class BaseTest {
 
     protected  WebDriver driver;
-    protected Logger logger = LogManager.getLogManager().getLogger(String.valueOf(this.getClass()));
+    protected Logger logger = Logger.getLogger(String.valueOf(this.getClass()));
 
     public WebDriver getDriver(){
        return DriverManager.getDriver();

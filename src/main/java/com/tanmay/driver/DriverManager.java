@@ -20,7 +20,6 @@ public class DriverManager {
     }
 
     public static  void init(){
-     // String browser = PropertiesReader.readKey("browser");
         String browser = PropertiesReader.readKey("browser");
       switch (browser.toLowerCase()){
           case "chrome" :
