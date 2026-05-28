@@ -14,10 +14,8 @@ public class TestDynamicControl extends BaseTest {
         logger.info("Test enable input Field");
         DynamicControlsPage page = new DynamicControlsPage();
         page.navigate();
-        Thread.sleep(4000);
         Assert.assertFalse(page.isInputEnabled(),"Input should be disabled initially ");
         page.clickEnableDisableInput();
-        Thread.sleep(4000);
         Assert.assertTrue(page.isInputEnabled(),"Input should be enabled after clicking button");
        Assert.assertTrue(page.getMessage().contains("It's enabled"));
     }

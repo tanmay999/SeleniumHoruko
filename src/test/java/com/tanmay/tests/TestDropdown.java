@@ -19,9 +19,7 @@ public class TestDropdown extends BaseTest {
         logger.info("Test : select option1");
         DropdownPages page = new DropdownPages();
         page.navigate();
-        Thread.sleep(4000);
         page.selectByVisibleText("Option 1");
-        Thread.sleep(4000);
         Assert.assertEquals(page.getSelectedOptions(),"Option 1dd");
     }
 
@@ -31,9 +29,7 @@ public class TestDropdown extends BaseTest {
         logger.info("test : select option2");
         DropdownPages dropdownPages = new DropdownPages();
         dropdownPages.navigate();
-        Thread.sleep(4000);
         dropdownPages.selectByValue("2");
-        Thread.sleep(4000);
         Assert.assertEquals(dropdownPages.getSelectedOptions(),"Option 2");
 
 

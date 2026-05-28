@@ -17,7 +17,6 @@ public class TestCheckBoxes extends BaseTest {
         Assert.assertFalse(checkBoxPages.isCheckbox1Checked(),"checkbox1 should be unchecked");
         Assert.assertTrue(checkBoxPages.isCheckbox2Checked(),"checkbox2 should be checked");
 
-        Thread.sleep(2000);
         checkBoxPages.checkCheckBox1();
 
 

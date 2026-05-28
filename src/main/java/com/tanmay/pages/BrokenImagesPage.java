@@ -12,7 +12,7 @@ public class BrokenImagesPage extends BasePage {
 
 
     public void navigate(){
-        openUrl(PropertiesReader.readKey("base_url")+"/broken_images");
+        openUrl(PropertiesReader.readKey("base_url")+"broken_images");
     }
 
     public int getTotalImageCount(){
