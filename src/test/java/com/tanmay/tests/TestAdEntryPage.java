@@ -20,7 +20,6 @@ public class TestAdEntryPage extends BaseTest {
        logger.info("Test add closed button");
        EntryAdPage entryAdPage = new EntryAdPage();
        entryAdPage.navigate();
-       Thread.sleep(4000);
        entryAdPage.isaModalDisplayed();
        entryAdPage.closeModal();
        Assert.assertTrue(entryAdPage.isModalClosed(),"Modal is not closed ");
